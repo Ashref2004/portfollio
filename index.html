@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ash</title>
+    <meta name="description" content="Professional backend developer specializing in scalable APIs, database architecture, and server-side solutions.">
+    <link rel="icon" href="Ash.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img id="profile-img" src="static/images/Ash.png" alt="Developer Photo">
+                <span>Ash</span>
+            </a>
+            
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-links">
+                <div class="nav-item">
+                    <a href="#services" class="nav-link">
+                        <i class="fas fa-server"></i> Services
+                    </a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <i class="fas fa-project-diagram"></i> Projects
+                    </a>
+                </div>
+                
+                <div class="nav-item tech-stack">
+                    <a href="#tech" class="nav-link">
+                        <i class="fas fa-code"></i> Tech Stack
+                    </a>
+                    <div class="tech-dropdown">
+                        <div class="tech-item">
+                            <div class="tech-circle">
+                                <i class="fab fa-node-js tech-icon"></i>
+                            </div>
+                            <span class="tech-name">Node.js</span>
+                            <span class="tech-level">Beginner</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-circle">
+                                <i class="fab fa-python tech-icon"></i>
+                            </div>
+                            <span class="tech-name">Python</span>
+                            <span class="tech-level">semi-expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-circle">
+                                <i class="fas fa-database tech-icon"></i>
+                            </div>
+                            <span class="tech-name">SQL</span>
+                            <span class="tech-level">Biginner</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-circle">
+                                <i class="fab fa-aws tech-icon"></i>
+                            </div>
+                            <span class="tech-name">AWS</span>
+                            <span class="tech-level"></span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-circle">
+                                <i class="fab fa-docker tech-icon"></i>
+                            </div>
+                            <span class="tech-name">Docker</span>
+                            <span class="tech-level">Biginner</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-circle">
+                                <i class="fas fa-server tech-icon"></i>
+                            </div>
+                            <span class="tech-name">REST APIs</span>
+                            <span class="tech-level">Middle</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-circle">
+                                <i class="fas fa-bolt tech-icon"></i>
+                            </div>
+                            <span class="tech-name">GraphQL</span>
+                            <span class="tech-level">semi-expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-circle">
+                                <i class="fas fa-shield-alt tech-icon"></i>
+                            </div>
+                            <span class="tech-name">Auth</span>
+                            <span class="tech-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="#experience" class="nav-link">
+                        <i class="fas fa-briefcase"></i> Experience
+                    </a>
+                </div>
+                
+                <div class="nav-toggle">
+                    <button class="toggle-btn" onclick="toggleTheme()" title="Toggle Dark Mode">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container animate-float">
+            <h1>Ash <span class="typewriter" id="typewriter"></span></h1>
+            <p class="subtitle">
+                Backend engineer specializing in scalable APIs, database architecture, and server-side solutions. 
+                I build robust systems that power modern applications.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-button">Hire Me</a>
+                <a href="#projects" class="cta-button secondary">View Projects</a>
+            </div>
+            
+            <div class="server-status">
+                <div class="server-header">
+                    <div class="server-dots">
+                        <div class="server-dot red"></div>
+                        <div class="server-dot yellow"></div>
+                        <div class="server-dot green"></div>
+                    </div>
+                    <div class="server-title">server ~/api/v1</div>
+                </div>
+                <div class="server-content">
+                    <div class="server-line">
+                        <span class="server-prompt">$</span>
+                        <span class="server-command">npm run start:prod</span>
+                    </div>
+                    <div class="server-line server-output" style="--line-index: 1">
+                        Starting production server...
+                    </div>
+                    <div class="server-line server-output" style="--line-index: 2">
+                        Connected to MongoDB cluster
+                    </div>
+                    <div class="server-line server-output" style="--line-index: 3">
+                        API server running on port 443
+                    </div>
+                    <div class="server-line">
+                        <span class="server-prompt">$</span>
+                        <span class="server-command">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 class="section-title">My Services</h2>
+        <p class="section-subtitle">Backend solutions tailored to your needs</p>
+        
+        <div class="services-grid">
+            <!-- API Development -->
+            <div class="service-card animate-float delay-1">
+                <div class="service-badge primary">Expert</div>
+                <div class="service-image-container">
+                    <img src="static/images/3.jpg" alt="API Development" class="service-image">
+                </div>
+                <div class="service-details">
+                    <h3 class="service-title">API Development</h3>
+                    <p class="service-description">
+                        Custom RESTful and GraphQL APIs built with Node.js, Express, and Python. 
+                        Scalable, secure, and well-documented solutions.
+                    </p>
+                    <ul class="service-features">
+                        <li>REST API Design & Development</li>
+                        <li>GraphQL Schema Design</li>
+                        <li>API Documentation (Swagger/OpenAPI)</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                    <div class="service-actions">
+                        <button class="contact-button" onclick="openModal('API Development', 2000, 'api-dev')">Contact</button>
+                        <button class="details-button" onclick="showDetails('api-dev')">Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Database Architecture -->
+            <div class="service-card animate-float delay-2">
+                <div class="service-badge">Expert</div>
+                <div class="service-image-container">
+                    <img src="static/images/111.jpg" alt="Database Architecture" class="service-image">
+                </div>
+                <div class="service-details">
+                    <h3 class="service-title">Database Architecture</h3>
+                    <p class="service-description">
+                        Relational and NoSQL database design, optimization, and implementation 
+                        for high-performance applications.
+                    </p>
+                    <ul class="service-features">
+                        <li>SQL & NoSQL Database Design</li>
+                        <li>Query Optimization</li>
+                        <li>Data Modeling</li>
+                        <li>Migration Strategies</li>
+                    </ul>
+                    <div class="service-actions">
+                        <button class="contact-button" onclick="openModal('Database Architecture', 1800, 'db-arch')">Contact</button>
+                        <button class="details-button" onclick="showDetails('db-arch')">Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Server Setup -->
+            <div class="service-card animate-float delay-3">
+                <div class="service-badge accent">Advanced</div>
+                <div class="service-image-container">
+                    <img src="static/images/Server Setup.jpeg" alt="Server Setup" class="service-image">
+                </div>
+                <div class="service-details">
+                    <h3 class="service-title">Server Setup</h3>
+                    <p class="service-description">
+                        Cloud infrastructure setup and deployment on AWS, GCP, and Azure. 
+                        Containerized solutions with Docker and Kubernetes.
+                    </p>
+                    <ul class="service-features">
+                        <li>Cloud Infrastructure</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Load Balancing</li>
+                    </ul>
+                    <div class="service-actions">
+                        <button class="contact-button" onclick="openModal('Server Setup', 2500, 'server-setup')">Contact</button>
+                        <button class="details-button" onclick="showDetails('server-setup')">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section backend-projects">
+        <h2 class="section-title">Backend Projects</h2>
+        <p class="section-subtitle">Scalable solutions I've built to solve real problems</p>
+        
+        <div class="projects-grid">
+            <!-- Univ-Bot Backend -->
+            <div class="project-item animate-float delay-1">
+                <img src="static/images/Bot-1.png" alt="Univ-Bot Backend" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Univ-Bot API</h3>
+                    <p class="project-description">
+                        Scalable backend for a university chatbot handling student requests, 
+                        course materials, and exam schedules.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <a href="https://t.me/TissmsiltBot" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hajj & Umrah API -->
+            <div class="project-item animate-float delay-2">
+                <img src="static/images/El-Hadj.png" alt="Hajj & Umrah API" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Hajj & Umrah API</h3>
+                    <p class="project-description">
+                        Comprehensive backend for pilgrimage services with booking system, 
+                        user management, and payment processing.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Html</span>
+                        <span class="tech-tag">css</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="https://ashref2004.github.io/EL-Hadj-El-Omra/" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- E-commerce Microservices -->
+            <div class="project-item animate-float delay-3">
+                <img src="static/images/Ash.png" alt="E-commerce Microservices" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">E-commerce Microservices</h3>
+                    <p class="project-description">
+                        Distributed system with product, order, and payment services 
+                        communicating via message queue.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Html</span>
+                        <span class="tech-tag">Css</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">python</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Authentication Service -->
+            <div class="project-item animate-float delay-4">
+                <img src="static/images/RecycleNow.png" alt="Authentication Service" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">RECYCLENOW </h3>
+                    <p class="project-description">
+                        A site for reporting and recycling waste, a project to change the cleanliness of the homeland
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Html</span>
+                        <span class="tech-tag">css</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">SqLite3</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Professional Journey</h2>
+        <p class="section-subtitle">Milestones in my backend development career</p>
+        
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item animate-float delay-1">
+                <div class="timeline-content">
+                    <div class="timeline-date">2023 - Present</div>
+                    <h3 class="timeline-title">Multi Service</h3>
+                    <div class="timeline-company">Ash</div>
+                    <p class="timeline-description">
+                        Designing and implementing scalable backend systems for various clients. 
+                        Specializing in API development, database architecture, and cloud solutions.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Experience 2 -->
+            <div class="timeline-item animate-float delay-2">
+                <div class="timeline-content">
+                    <div class="timeline-date">2021 - 2023</div>
+                    <h3 class="timeline-title">Full Stack Developer</h3>
+                    <div class="timeline-company">Freelance</div>
+                    <p class="timeline-description">
+                        Built full-stack applications with Node.js backends and React frontends. 
+                        Gained experience with REST APIs, authentication, and deployment.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Experience 3 -->
+            <div class="timeline-item animate-float delay-3">
+                <div class="timeline-content">
+                    <div class="timeline-date">2019 - 2021</div>
+                    <h3 class="timeline-title">Front-end Devloper</h3>
+                    <div class="timeline-company">Freelance</div>
+                    <p class="timeline-description">
+                        Started my journey with backend development using Python and PHP. 
+                        Built my first APIs and database-driven applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="section">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <p class="section-subtitle">Technologies I work with daily</p>
+        
+        <div class="tech-stack-items">
+            <div class="tech-item animate-float delay-1">
+                <div class="tech-circle">
+                    <i class="fab fa-node-js tech-icon"></i>
+                </div>
+                <span class="tech-name">Node.js</span>
+                <span class="tech-level">Expert</span>
+            </div>
+            
+            <div class="tech-item animate-float delay-2">
+                <div class="tech-circle">
+                    <i class="fab fa-python tech-icon"></i>
+                </div>
+                <span class="tech-name">Python</span>
+                <span class="tech-level">Advanced</span>
+            </div>
+            
+            <div class="tech-item animate-float delay-3">
+                <div class="tech-circle">
+                    <i class="fas fa-database tech-icon"></i>
+                </div>
+                <span class="tech-name">SQL</span>
+                <span class="tech-level">Expert</span>
+            </div>
+            
+            <div class="tech-item animate-float delay-4">
+                <div class="tech-circle">
+                    <i class="fab fa-aws tech-icon"></i>
+                </div>
+                <span class="tech-name">AWS</span>
+                <span class="tech-level">Intermediate</span>
+            </div>
+            
+            <div class="tech-item animate-float delay-5">
+                <div class="tech-circle">
+                    <i class="fab fa-docker tech-icon"></i>
+                </div>
+                <span class="tech-name">Docker</span>
+                <span class="tech-level">Advanced</span>
+            </div>
+            
+            <div class="tech-item animate-float delay-1">
+                <div class="tech-circle">
+                    <i class="fas fa-server tech-icon"></i>
+                </div>
+                <span class="tech-name">REST APIs</span>
+                <span class="tech-level">Expert</span>
+            </div>
+            
+            <div class="tech-item animate-float delay-2">
+                <div class="tech-circle">
+                    <i class="fas fa-bolt tech-icon"></i>
+                </div>
+                <span class="tech-name">GraphQL</span>
+                <span class="tech-level">Intermediate</span>
+            </div>
+            
+            <div class="tech-item animate-float delay-3">
+                <div class="tech-circle">
+                    <i class="fas fa-shield-alt tech-icon"></i>
+                </div>
+                <span class="tech-name">Auth</span>
+                <span class="tech-level">Advanced</span>
+            </div>
+        </div>
+        
+        <div class="api-snippet animate-float delay-4">
+            <pre><code>// Sample REST API Endpoint with Express
+const express = require('express');
+const router = express.Router();
+const auth = require('../middleware/auth');
+const { check, validationResult } = require('express-validator');
+
+// @route   POST api/users
+// @desc    Register user
+// @access  Public
+router.post(
+  '/',
+  [
+    check('name', 'Name is required').not().isEmpty(),
+    check('email', 'Please include a valid email').isEmail(),
+    check('password', 'Please enter a password with 6+ chars').isLength({ min: 6 })
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    const { name, email, password } = req.body;
+
+    try {
+      // Check if user exists
+      let user = await User.findOne({ email });
+      if (user) {
+        return res.status(400).json({ errors: [{ msg: 'User already exists' }] });
+      }
+
+      // Create user instance
+      user = new User({ name, email, password });
+
+      // Encrypt password
+      const salt = await bcrypt.genSalt(10);
+      user.password = await bcrypt.hash(password, salt);
+
+      // Save to database
+      await user.save();
+
+      // Return JWT
+      const payload = { user: { id: user.id } };
+      jwt.sign(
+        payload,
+        config.get('jwtSecret'),
+        { expiresIn: 360000 },
+        (err, token) => {
+          if (err) throw err;
+          res.json({ token });
+        }
+      );
+    } catch (err) {
+      console.error(err.message);
+      res.status(500).send('Server error');
+    }
+  }
+);
+
+module.exports = router;</code></pre>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">Ash</div>
+            
+            <div class="footer-links">
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#tech">Tech Stack</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61574233920997" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/v_code.coding/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Ashref2004" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/v-code-701a54356" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://t.me/Ashref2004" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="https://wa.me/213782675199" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
+            <p class="copyright">© 2025 Ash. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <h2 class="modal-title" id="modalServiceTitle">Service Inquiry</h2>
+            
+            <div class="modal-image-container">
+                <img id="modalServiceImage" src="" alt="Service Image" class="modal-image">
+            </div>
+            
+            <p class="modal-description" id="modalServiceDescription"></p>
+            
+            <div class="modal-tech" id="modalServiceTech">
+                <!-- Technology tags will be added here -->
+            </div>
+            
+            <ul class="modal-features" id="modalServiceFeatures">
+                <!-- Features will be added here -->
+            </ul>
+            
+            <form class="modal-form" id="serviceForm">
+                <div class="form-group">
+                    <label for="service-name">Full Name</label>
+                    <input type="text" id="service-name" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service-email">Email</label>
+                    <input type="email" id="service-email" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service-phone">Phone</label>
+                    <input type="tel" id="service-phone" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service-company">Company</label>
+                    <input type="text" id="service-company" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service-details">Project Details</label>
+                    <textarea id="service-details" rows="5" class="form-textarea"></textarea>
+                </div>
+                
+                <button type="button" class="submit-button" onclick="submitService()">Send Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="static/js/index.js"></script>
+</body>
+</html>
