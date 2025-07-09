@@ -1,81 +1,112 @@
-
-# 🌟 Achraf's Personal Portfolio
+# ✨ Achraf's Legendary Portfolio | المنصة الأسطورية لأشرف
 
 ![Welcome Animation](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHZ3YWlhcHB5anZldWRzbXZwNnl3azZnY3M2NnhoZzFtbjQ5dTQ0ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/q217GUnfKAmJlFcjBX/giphy.gif)
 
-Welcome to my **Personal Portfolio Website** — a creative space where I showcase my projects, skills, and passion for web development.  
-Built with pure **HTML**, **CSS**, and **JavaScript**, this site blends sleek design with smooth animations to offer an engaging user experience.
+> **"Crafted with passion. Designed to inspire. Built to last."**  
+> **"مصنوع بشغف. مصمم ليُلهم. ومبني ليصمد."**
 
 ---
 
-## 🚀 Live Demo
+## 🌐 ENGLISH VERSION
 
-🔗 [Explore the live portfolio here!](https://portfollio-ww0h.onrender.com)
+### 🚀 [Live Demo](https://portfollio-ww0h.onrender.com)
 
----
+Explore the live version and dive into a seamless interactive experience.
 
-## 🔥 Why This Portfolio Rocks
+### 🌟 Why This Portfolio is a Masterpiece
 
-- 💎 **Clean and Responsive:** Works flawlessly on all devices  
-- ⚡ **Fast Loading:** Optimized for performance and speed  
-- 🎨 **Custom Animations:** Adding flair with smooth, subtle animations  
-- 🛠️ **Built with:** Vanilla HTML, CSS, and JavaScript  
-- 📸 **Showcasing:** Projects, skills, services with crisp visuals  
+- 💎 Pixel-Perfect & Responsive  
+- ⚡ Lightning-Fast Performance  
+- 🎨 Custom Animations with CSS/JS  
+- 🧠 Zero Dependencies (Vanilla HTML/CSS/JS)  
+- 🧩 Modular and Scalable Structure  
 
----
+### 🧱 Project Structure
 
-## 📁 Project Structure
-
-```plaintext
+```bash
 .
-├── index.html              # Main entry page
+├── index.html
 └── static/
-    ├── css/                # CSS files
-    ├── js/                 # JavaScript files
-    ├── images/             # Assets & project images
-    └── images-2/           # Screenshots for README display
+    ├── css/
+    ├── js/
+    ├── images/
+    └── images-2/
 ```
 
----
+### 🎥 UI Sneak Peek
 
-## 🎥 Sneak Peek
-
-| Home | Personal Info | Services | Skills |
-|-------|--------------|----------|--------|
+| Home | About Me | Services | Skills |
+|------|----------|----------|--------|
 | ![Home](static/images-2/home.png) | ![Personal](static/images-2/personal.png) | ![Services](static/images-2/service.png) | ![Skills](static/images-2/back-end.png) |
 
----
-
-## 🛠️ Technologies Used
-
-| HTML5 | CSS3 | JavaScript |
-|-------|------|------------|
-| ![HTML5](https://cdn-icons-png.flaticon.com/512/732/732212.png) | ![CSS3](https://cdn-icons-png.flaticon.com/512/732/732190.png) | ![JS](https://cdn-icons-png.flaticon.com/512/5968/5968292.png) |
-
----
-
-## 💻 How to Run Locally
+### 🧪 Run Locally
 
 ```bash
 git clone https://github.com/your-username/portfolio.git
 cd portfolio
-open index.html  # or start index.html on Windows
+open index.html
 ```
 
-Just open the `index.html` in any modern browser — no build steps or servers needed!
+---
+
+## 🇩🇿 النسخة العربية
+
+### 🚀 [الموقع المباشر](https://portfollio-ww0h.onrender.com)
+
+تجربة تفاعلية عصرية تجمع بين السرعة والجمال ✨
+
+### 🌟 لماذا هذا البورتفوليو أسطوري
+
+- 💎 تصميم متجاوب مع جميع الأجهزة  
+- ⚡ سرعة تحميل رهيبة  
+- 🎨 حركات مخصصة وناعمة  
+- 🛠️ بلغة HTML وCSS وJavaScript فقط  
+- 🧩 منظم بطريقة قابلة للتطوير المستقبلي
+
+### 🧱 هيكل المشروع
+
+```bash
+.
+├── index.html              # الصفحة الرئيسية
+└── static/
+    ├── css/                # ملفات التنسيق
+    ├── js/                 # سكريبتات جافاسكريبت
+    ├── images/             # صور وأصول
+    └── images-2/           # صور العرض للواجهة
+```
+
+### 🖼️ لمحة عن الواجهة
+
+| الصفحة الرئيسية | من أنا | الخدمات | المهارات |
+|------------------|--------|----------|-----------|
+| ![Home](static/images-2/home.png) | ![Personal](static/images-2/personal.png) | ![Services](static/images-2/service.png) | ![Skills](static/images-2/back-end.png) |
+
+### 🧪 كيفية تشغيله محليًا
+
+```bash
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
+open index.html
+```
 
 ---
 
-## 📜 License
+## 📜 License | الرخصة
 
-Licensed under the [MIT License](LICENSE). Feel free to use and adapt!
-
----
-
-## 🙌 Author
-
-**Achraf** – passionate about crafting beautiful web experiences.
+MIT License – Feel free to use, modify, and share  
+رخصة MIT — يمكنك استخدام المشروع وتعديله بحرية
 
 ---
 
-*Thanks for visiting! 🚀*
+## 👨‍🎨 Author | المؤلف
+
+**Achraf** – Developer & Designer | أشرف – مطور ومصمم  
+*"The code is clean. The vision is bold. The future is yours to build."*  
+*"الشفرة نظيفة، والرؤية جريئة، والمستقبل بين يديك."*
+
+---
+
+### 💬 Thank You | شكراً لزيارتك
+
+> *Stay creative. Stay legendary.* ⚔️  
+> *ابق مبدعًا، وكن أسطورة.*
